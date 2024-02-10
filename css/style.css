@@ -1,0 +1,12 @@
+:root {
+  --main-green: #00392c;
+  --main-white: #fbfdfa;
+  --main-yellow: #ffff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main-green);
+}
