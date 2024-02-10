@@ -5,8 +5,28 @@
 }
 
 @font-face {
+  font-family: "Cobe";
+  src: url("../assets/fonts/Cobe/Cobe-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cobe Heavy";
+  src: url("../assets/fonts/Cobe/Cobe-Heavy.ttf");
+}
+
+@font-face {
   font-family: "Cobe Semibold";
   src: url("../assets/fonts/Cobe/Cobe-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Cobe HeavyItalic";
+  src: url("../assets/fonts/Cobe/cobe-heavy-italic.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 * {
@@ -28,6 +48,7 @@ body {
   padding: 0% 5%;
   margin-bottom: 1000px;
   background-color: var(--main-green);
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .yellow {
@@ -37,6 +58,7 @@ body {
 /* ============== NAVBAR ============== */
 
 nav {
+  max-width: 1920px;
   width: 100%;
   padding: 0% 5%;
   position: fixed;
@@ -97,4 +119,112 @@ nav ul li a:hover {
 
 @media (max-width: 380px) {
   /* MENU HAMBURGUER */
+}
+
+/* ============== MAIN ============== */
+
+/* main {
+  background-image: url("../assets/images/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+#home {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Cobe HeavyItalic", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 3.5rem;
+}
+
+.logoAndDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.description h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.bttnFreeTrial {
+  background-color: rgba(0, 0, 0, 0.344);
+  padding: 7px 20px;
+  border-radius: 20px;
+  line-height: 25px;
+}
+
+.description a {
+  font-size: 1.2rem;
+  font-family: "Cobe", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description a p strong {
+  font-weight: bolder;
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description a p span {
+  font-weight: bolder;
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home h3 {
+  font-weight: normal;
+  background-color: rgba(0, 0, 0, 0.107);
+  padding: 12px 50px;
+  border-radius: 15px;
+}
+
+@media (max-width: 810px) {
+  .logoAndDescription {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 565px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .description h2 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    max-width: 300px;
+    /* margin-left: -120px; */
+  }
 }
