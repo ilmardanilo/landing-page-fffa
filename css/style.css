@@ -114,6 +114,10 @@ nav ul li a:hover {
 }
 
 @media (max-width: 510px) {
+  nav {
+    padding-top: 3px;
+  }
+
   nav ul li {
     font-size: 1.2rem;
   }
