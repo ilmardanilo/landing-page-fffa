@@ -627,14 +627,20 @@ h1 {
   font-size: 1.7rem;
   font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
+
+  position: relative;
 }
 
 .dayAvailable .timePeriod {
   font-family: "Cobe", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
   font-size: 0.9rem;
   font-style: italic;
   text-align: start;
-  margin-bottom: -15px;
+
+  position: absolute;
+  top: -12px;
+  left: -20px;
 }
 
 .dayAndHour {
