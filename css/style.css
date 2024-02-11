@@ -131,7 +131,7 @@ nav ul li a:hover {
 main {
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 200px;
 
   /* background-image: url("../assets/images/background.png");
   background-attachment: fixed;
@@ -314,5 +314,129 @@ h1 {
   .paoloCianciName {
     margin-top: -20px;
     font-size: 2rem;
+  }
+}
+
+/* ============== SECTION SESSIONS ============== */
+
+#sessions {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.sessionsTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+}
+
+.sessionsText {
+  display: flex;
+  flex-direction: column;
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sessionsText h2 {
+  font-size: 6rem;
+}
+
+.sessionsText h3 {
+  margin-top: -35px;
+  font-size: 3rem;
+}
+
+.sessionsImg img {
+  max-width: 200px;
+  margin-left: -40px;
+}
+
+.sessionsDescription p {
+  font-size: 2rem;
+}
+
+@media (max-width: 755px) {
+  .sessionsText h2 {
+    font-size: 5rem;
+  }
+
+  .sessionsText h3 {
+    margin-top: -25px;
+    font-size: 2.5rem;
+  }
+
+  .sessionsImg img {
+    max-width: 170px;
+    margin-left: -30px;
+  }
+
+  .sessionsDescription p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .sessionsText h2 {
+    font-size: 4rem;
+  }
+
+  .sessionsText h3 {
+    margin-top: -20px;
+    font-size: 2rem;
+  }
+
+  .sessionsImg img {
+    max-width: 130px;
+    margin-left: -20px;
+  }
+
+  .sessionsDescription p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .sessionsText h2 {
+    font-size: 3.5rem;
+  }
+
+  .sessionsText h3 {
+    margin-top: -20px;
+    font-size: 1.7rem;
+  }
+
+  .sessionsImg img {
+    max-width: 110px;
+    margin-left: -20px;
+  }
+
+  .sessionsDescription p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .sessionsText h2 {
+    font-size: 3.3rem;
+  }
+
+  .sessionsText h3 {
+    margin-top: -20px;
+    font-size: 1.5rem;
+  }
+
+  .sessionsImg img {
+    max-width: 90px;
+    margin-left: -20px;
+  }
+
+  .sessionsDescription p {
+    font-size: 1rem;
   }
 }
