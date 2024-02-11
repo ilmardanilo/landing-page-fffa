@@ -133,11 +133,11 @@ main {
   flex-direction: column;
   gap: 200px;
 
-  /* background-image: url("../assets/images/background.png");
+  /* background-image: url("../assets/images/FOTO\ logo\ em\ baixo\ de\ SESSIONS.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
+  background-position: top; */
 }
 
 /* ============== SECTION HOME ============== */
@@ -472,5 +472,105 @@ h1 {
 
   .sessionsDescription p {
     font-size: 1rem;
+  }
+}
+
+/* ============== SECTION PRICING ============== */
+
+#pricing {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+#pricing {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  padding: 10px 20px 150px 20px;
+  border-radius: 30px;
+}
+
+.princigTitle h2 {
+  font-size: 5rem;
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.princigDescription h3 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.princigDescription p {
+  font-size: 2rem;
+}
+
+@media (max-width: 650px) {
+  .princigTitle h2 {
+    font-size: 4rem;
+  }
+
+  .princigDescription h3 {
+    font-size: 2rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .princigDescription p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .princigTitle h2 {
+    font-size: 3.8rem;
+  }
+
+  .princigDescription h3 {
+    font-size: 1.8rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .princigDescription p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .princigTitle h2 {
+    font-size: 3.6rem;
+  }
+
+  .princigDescription h3 {
+    font-size: 1.6rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .princigDescription p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .princigTitle h2 {
+    font-size: 3.5rem;
+  }
+
+  .princigDescription h3 {
+    font-size: 1.5rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .princigDescription p {
+    font-size: 1.2rem;
   }
 }
