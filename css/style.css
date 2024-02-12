@@ -59,9 +59,10 @@ body {
   max-width: 1920px;
   margin: auto;
   display: flex;
+  flex-direction: column;
+  gap: 100px;
   justify-content: center;
   padding: 0% 5%;
-  margin-bottom: 1000px;
   background-color: var(--main-green);
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -77,6 +78,8 @@ nav {
   width: 100%;
   padding: 0% 5%;
   position: fixed;
+  top: 0;
+  left: 0;
   justify-content: center;
   align-items: center;
   background-color: #01261e;
@@ -146,7 +149,7 @@ nav ul li a:hover {
 main {
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 150px;
 
   /* background-image: url("../assets/images/FOTO\ logo\ em\ baixo\ de\ SESSIONS.png");
   background-attachment: fixed;
@@ -936,4 +939,48 @@ form button {
 
 #video p a {
   text-decoration: underline;
+}
+
+/* ============== SECTION VIDEO ============== */
+
+footer {
+  margin: auto;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  gap: 7px;
+}
+
+footer .instagram a img {
+  width: 22px;
+}
+
+footer .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .contact p {
+  font-size: 1.3rem;
+  margin-top: -5px;
+}
+
+footer .email img {
+  width: 20px;
+}
+
+footer .developedBy p {
+  font-family: "Poppins Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+
+footer .developedBy p a {
+  font-weight: bolder;
 }
