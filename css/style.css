@@ -438,6 +438,26 @@ h1 {
   }
 }
 
+@media (max-width: 610px) {
+  .sessionsText h2 {
+    font-size: 4.5rem;
+  }
+
+  .sessionsText h3 {
+    margin-top: -20px;
+    font-size: 2.2rem;
+  }
+
+  .sessionsImg img {
+    max-width: 150px;
+    margin-left: -20px;
+  }
+
+  .sessionsDescription p {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 580px) {
   .sessionsText h2 {
     font-size: 4rem;
@@ -458,7 +478,7 @@ h1 {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 490px) {
   .sessionsText h2 {
     font-size: 3.5rem;
   }
@@ -478,7 +498,7 @@ h1 {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 415px) {
   .sessionsText h2 {
     font-size: 3.3rem;
   }
@@ -494,6 +514,7 @@ h1 {
   }
 
   .sessionsDescription p {
+    padding: 0px 10px;
     font-size: 1rem;
   }
 }
