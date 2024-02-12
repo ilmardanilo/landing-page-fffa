@@ -2,6 +2,16 @@
   --main-green: #00392c;
   --main-white: #fbfdfa;
   --main-yellow: #ffff00;
+
+  --white: #fff;
+  --whitesmoke: #f9f9f9;
+  --light-grey: #ececec;
+  --grey: #c4c4c4;
+  --medium-grey: #a7a7a7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #1b77f3;
+  --red: #cf3c3f;
 }
 
 @font-face {
@@ -745,5 +755,160 @@ h1 {
 
   .imgCalendar img {
     max-width: 120px;
+  }
+}
+
+/* ============== SECTION HOW TO ENROLL ============== */
+
+#howToEnroll {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.howToEnrollTitle {
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.howToEnrollTitle h2 {
+  font-size: 4rem;
+}
+
+.howToEnrollTitle h3 {
+  font-size: 3rem;
+  margin-top: -30px;
+}
+
+.formBox {
+  background-color: rgba(0, 0, 0, 0.344);
+  max-width: 900px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: clamp(35px, 8%, 70px);
+}
+
+.login__label {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  background-color: var(--main-green);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 25px 10px 10px;
+  font-weight: 600;
+  color: var(--main-white);
+}
+
+.login__label span {
+  position: absolute;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: var(--main-yellow);
+  margin: 20px;
+  cursor: text;
+  transition: all 200ms ease;
+}
+
+.input:focus {
+  background-color: var(--main-green);
+  border: 1px solid var(--main-white);
+}
+
+.login__label .span-active {
+  font-size: 0.8em;
+  margin: 8px 10px;
+}
+
+form p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+form button {
+  font-family: "Cobe Heavy", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.2rem;
+  font-style: italic;
+  padding: 0px 20px 8px 20px;
+  text-align: center;
+  color: var(--main-yellow);
+  background-color: var(--main-green);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+
+  max-width: 200px;
+  min-width: 150px;
+  height: 70px;
+}
+
+.loading {
+  margin-top: 15px;
+  width: 35px;
+  animation: spin 1.4s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 590px) {
+  .howToEnrollTitle h2 {
+    font-size: 3.5rem;
+  }
+
+  .howToEnrollTitle h3 {
+    font-size: 2.5rem;
+    margin-top: -25px;
+  }
+}
+
+@media (max-width: 515px) {
+  .howToEnrollTitle h2 {
+    font-size: 3rem;
+  }
+
+  .howToEnrollTitle h3 {
+    font-size: 2rem;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .howToEnrollTitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .howToEnrollTitle h3 {
+    font-size: 1.5rem;
+    margin-top: -15px;
+  }
+
+  .login__label span {
+    font-size: 0.8em;
   }
 }
