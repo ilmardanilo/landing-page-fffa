@@ -26,6 +26,20 @@ const handleSubmit = (event) => {
     "input[name=free_trial_day]"
   ).value;
 
+  const paramsToSendEmail = {
+    from_name: nameOfResponsible,
+    message: `
+    Responsible person's name: ${nameOfResponsible}
+    Name of child: ${nameOfChild}
+    Age: ${age}
+    Playing experience: ${playingExperience}
+    Email: ${email}
+    Day interested in doing a free trial: ${freeTrialDay}
+    `,
+  };
+
+  emailjs.send("service_fn5gd0i", "template_wr5whhp", paramsToSendEmail);
+
   fetch("https://api.sheetmonkey.io/form/6s5ZiBDmQu8WhCoHU1XiNL", {
     method: "post",
     headers: {
