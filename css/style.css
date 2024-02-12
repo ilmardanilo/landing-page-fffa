@@ -916,3 +916,24 @@ form button {
     font-size: 0.8em;
   }
 }
+
+/* ============== SECTION VIDEO ============== */
+
+#video {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -100px;
+}
+
+#video iframe {
+  border-radius: 25px;
+}
+
+#video p a {
+  text-decoration: underline;
+}
