@@ -114,6 +114,10 @@ nav ul li a:hover {
     gap: 0%;
   }
 
+  nav {
+    padding-top: 5px;
+  }
+
   nav ul li {
     font-size: 1.5rem;
   }
@@ -124,10 +128,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 510px) {
-  nav {
-    padding-top: 3px;
-  }
-
   nav ul li {
     font-size: 1.2rem;
   }
@@ -884,6 +884,10 @@ form button {
   .howToEnrollTitle h3 {
     font-size: 2.5rem;
     margin-top: -25px;
+  }
+
+  form button {
+    padding: 0px 20px;
   }
 }
 
