@@ -877,6 +877,10 @@ form {
   margin: 8px 10px;
 }
 
+option {
+  font-size: 1.2rem;
+}
+
 form p {
   font-size: 1.5rem;
   margin-top: 20px;

@@ -19,11 +19,11 @@ const handleSubmit = (event) => {
   const nameOfChild = document.querySelector("input[name=name_of_child]").value;
   const age = document.querySelector("input[name=age]").value;
   const playingExperience = document.querySelector(
-    "input[name=playing_experience]"
+    "select[name=playing_experience]"
   ).value;
   const email = document.querySelector("input[name=email]").value;
   const freeTrialDay = document.querySelector(
-    "input[name=free_trial_day]"
+    "select[name=free_trial_day]"
   ).value;
 
   const paramsToSendEmail = {

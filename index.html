@@ -253,6 +253,11 @@
             </label>
 
             <label class="login__label">
+              <span>Email:</span>
+              <input type="email" name="email" required class="input" />
+            </label>
+
+            <label class="login__label">
               <span>Name of child:</span>
               <input type="text" name="name_of_child" required class="input" />
             </label>
@@ -264,22 +269,21 @@
 
             <label class="login__label">
               <span>Playing experience:</span>
-              <input
-                type="text"
-                name="playing_experience"
-                required
-                class="input"
-              />
-            </label>
-
-            <label class="login__label">
-              <span>Email:</span>
-              <input type="email" name="email" required class="input" />
+              <select name="playing_experience" class="input" required>
+                <option value="beginner" class="input option" hidden></option>
+                <option value="beginner" class="input">Beginner</option>
+                <option value="intermediate" class="input">Intermediate</option>
+              </select>
             </label>
 
             <label class="login__label">
               <span>Day interested in doing a free trial:</span>
-              <input type="text" name="free_trial_day" required class="input" />
+              <select name="free_trial_day" class="input" required>
+                <option value="monday" class="input" hidden></option>
+                <option value="monday" class="input">Monday</option>
+                <option value="wednesday" class="input">Wednesday</option>
+                <option value="friday" class="input">Friday</option>
+              </select>
             </label>
 
             <p class="yellow">Thank you!</p>
