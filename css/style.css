@@ -65,9 +65,8 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 10px;
   justify-content: center;
-  padding: 0% 5%;
   background-color: var(--main-green);
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -155,12 +154,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 150px;
+  margin-top: -27px;
 
-  /* background-image: url("../assets/images/FOTO\ logo\ em\ baixo\ de\ SESSIONS.png");
-  background-attachment: fixed;
+  background-image: url("../assets/images/background.png");
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top; */
+  background-position: top;
+}
+
+@media (max-width: 510px) {
+  main {
+    margin-top: -50px;
+  }
 }
 
 /* ============== SECTION HOME ============== */
@@ -173,6 +179,8 @@ main {
   align-items: center;
   gap: 40px;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 h1 {
@@ -230,7 +238,7 @@ h1 {
 
 #home h3 {
   font-weight: normal;
-  background-color: rgba(0, 0, 0, 0.107);
+  background-color: rgba(0, 0, 0, 0.207);
   padding: 12px 50px;
   border-radius: 15px;
 }
@@ -254,7 +262,7 @@ h1 {
 
 @media (max-width: 565px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .description h2 {
@@ -321,6 +329,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: normal;
   font-family: "Poppins Light", Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px 12px;
 }
 
 .coachName {
@@ -416,6 +425,7 @@ h1 {
 
 .sessionsDescription p {
   font-size: 2rem;
+  padding: 0px 12px;
 }
 
 @media (max-width: 755px) {
@@ -957,6 +967,7 @@ form button {
   align-items: center;
   text-align: center;
   margin-top: -100px;
+  padding-bottom: 50px;
 }
 
 #video iframe {
@@ -970,6 +981,7 @@ form button {
 /* ============== SECTION VIDEO ============== */
 
 footer {
+  padding: 0px 10px;
   margin: auto;
   max-width: 1920px;
   display: flex;
@@ -1010,3 +1022,14 @@ footer .developedBy p {
 footer .developedBy p a {
   font-weight: bolder;
 }
+
+/* ============== BACKGROUNDS ============== */
+
+/* #home {
+  background-color: transparent;
+  background-image: url("../assets/images/school.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
