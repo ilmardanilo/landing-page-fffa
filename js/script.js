@@ -38,9 +38,9 @@ const handleSubmit = (event) => {
     `,
   };
 
-  emailjs.send("service_fn5gd0i", "template_wr5whhp", paramsToSendEmail);
+  emailjs.send("service_jfpaqcj", "template_xpdljoq", paramsToSendEmail);
 
-  fetch("https://api.sheetmonkey.io/form/6s5ZiBDmQu8WhCoHU1XiNL", {
+  fetch("https://api.sheetmonkey.io/form/qczeQwnLG5fwidn4DGH4br", {
     method: "post",
     headers: {
       Accept: "application/json",
