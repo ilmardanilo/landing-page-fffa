@@ -301,7 +301,6 @@ h1 {
 
   .logo {
     max-width: 250px;
-    /* margin-left: -120px; */
   }
 }
 
@@ -1026,14 +1025,3 @@ footer .developedBy p {
 footer .developedBy p a {
   font-weight: bolder;
 }
-
-/* ============== BACKGROUNDS ============== */
-
-/* #home {
-  background-color: transparent;
-  background-image: url("../assets/images/school.png");
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
